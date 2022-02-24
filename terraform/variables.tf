@@ -1,10 +1,10 @@
-// AWS Credentials
-variable "aws_access_key" {}
-variable "aws_secret_key" {}
+variable "aws_profile" {
+  default = "sandbox"
+}
 
 // AWS Region where we're deploying the gateway.
 variable "region" {
-  default = "us-east-1"
+  default = "eu-west-2"
 }
 
 // Primary CIDR for the gateway.
